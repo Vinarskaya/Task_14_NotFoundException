@@ -1,7 +1,6 @@
 package ru.netology.javaqa.product.manager;
 
 import ru.netology.javaqa.product.product.Product;
-import ru.netology.javaqa.product.product.book.Book;
 import ru.netology.javaqa.product.repo.ProductRepository;
 
 public class ProductManager {
@@ -20,6 +19,7 @@ public class ProductManager {
     }
 
     public void removeById(int id) {
+
         repository.removeById(id);
     }
 
@@ -47,6 +47,7 @@ public class ProductManager {
     }
 
     public int getPrice(Product product){
+
         return product.getPrice();
     }
 }
